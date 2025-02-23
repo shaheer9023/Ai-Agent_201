@@ -1,6 +1,6 @@
 import ollama
 prompt=input("enter your prompt : ")
-Model = "llama3.2"  
+Model = "llama3.2"
 messages = [
     {"role": "user",
      "content": prompt}
