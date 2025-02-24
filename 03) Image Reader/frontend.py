@@ -4,9 +4,9 @@ from PIL import Image
 import os
 from dotenv import load_dotenv
 
-# Use Streamlit secrets instead of env
-api_key = st.secrets["GOOGLE_API_KEY"]
-genai.configure(api_key=api_key)
+# API key configuration
+GOOGLE_API_KEY = "AIzaSyCtrVX7O1eN87cAFOd8GdjrO0y_tLRPjtQ"
+genai.configure(api_key=GOOGLE_API_KEY)
 
 def is_image_related_prompt(prompt):
     # Keywords that suggest the prompt is not about the image
