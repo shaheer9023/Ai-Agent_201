@@ -1,6 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
-import PIL.Image
+from PIL import Image
 import os
 from dotenv import load_dotenv
 
@@ -51,7 +51,7 @@ def main():
     
     if uploaded_file is not None:
         # Display uploaded image
-        image = PIL.Image.open(uploaded_file)
+        image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded Image', use_container_width=True)
         
         # Text input for prompt
