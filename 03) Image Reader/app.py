@@ -20,8 +20,8 @@ root = tk.Tk()
 root.withdraw()  # Main window hide kar do
 
 # 📂 User se image file select karne ka kehna
-file_path = filedialog.askopenfilename(title="Select an Image", 
-                                       filetypes=[("Image Files", "*.png;*.jpg;*.jpeg;*.gif;*.bmp")])
+file_path = filedialog.askopenfilename(title="Select an Image",
+                                filetypes=[("Image Files", "*.png;*.jpg;*.jpeg;*.gif;*.bmp")])
 
 # 📸 Image load aur display karo
 if file_path:
